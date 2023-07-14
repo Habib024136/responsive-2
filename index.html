@@ -4,8 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            border:1px solid red;
+            max-width:1140px;
+            margin:0 auto;
+        }
+        .img-container{
+            display:flex;
+        }
+        .img-container img{
+            width:100%;
+        }
+        .img-container div{
+            width: 50%;
+        }
+        @media screen and (max-width:576px){
+            .img-container{
+                flex-direction:column-reverse;
+            }
+            .img-container div{
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    ami parini toma ke apon kore rahte 
+   <ul>
+    <li>viewport meta tag</li>
+    <li>Css relative Unt</li>
+    <li>body max width and horizontal centrer line</li>
+    <li>image fluid</li>
+    <li>two columns flex use media query width flex direction</li>
+    <li>multi colum:grid layo</li>
+    <li>menu Responsive:will need javascipt</li>
+   </ul>
+<main>
+    <div class="img-container">
+        <div class="div">
+            <img src="./image/2.jpg" alt="">
+        </div>
+        <div class="div">
+            <img src="./image/images.jpeg"
+        </div>
+    </div>
+</main>
 </body>
 </html>
